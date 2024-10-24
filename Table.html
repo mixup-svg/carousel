@@ -29,41 +29,73 @@
         font-family: Arial, sans-serif;
         color: #343a40;
         line-height: 1;
+        display: flex;
+        justify-content: center;
+      }
+      table {
+        width: 800px;
+        margin-top: 100px;
+        /* border: 1px solid #343a40; */
+        border-collapse: collapse;
+        font-size: 18px;
+      }
+      td,
+      th {
+        padding: 16px 24px;
+        /* border: #343a40 1px solid; */
+        text-align: left;
+      }
+      thead tr {
+        background-color: #087f6b;
+        color: #fff;
+      }
+      thead th {
+        width: 25%;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #ced4da;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #f8f9fa;
       }
     </style>
   </head>
   <body>
     <table>
-      <tr>
-        <td>Chair</td>
-        <td>The Laid Back</td>
-        <td>The Worker Bee</td>
-        <td>The Chair 4/2</td>
-      </tr>
-      <tr>
-        <td>Width</td>
-        <td>80 cm</td>
-        <td>60 cm</td>
-        <td>220 cm</td>
-      </tr>
-      <tr>
-        <td>Height</td>
-        <td>100 cm</td>
-        <td>110 cm</td>
-        <td>90 cm</td>
-      </tr>
-      <tr>
-        <td>Depth</td>
-        <td>70 cm</td>
-        <td>65 cm</td>
-        <td>80 cm</td>
-      </tr>
-      <tr>
-        <td>Weight</td>
-        <td>16 Km</td>
-        <td>22 Km</td>
-        <td>80 Km</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Chair</th>
+          <th>The Laid Back</th>
+          <th>The Worker Bee</th>
+          <th>The Chair 4/2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Width</th>
+          <td>80 cm</td>
+          <td>60 cm</td>
+          <td>220 cm</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>100 cm</td>
+          <td>110 cm</td>
+          <td>90 cm</td>
+        </tr>
+        <tr>
+          <th>Depth</th>
+          <td>70 cm</td>
+          <td>65 cm</td>
+          <td>80 cm</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>16 Km</td>
+          <td>22 Km</td>
+          <td>80 Km</td>
+        </tr>
+      </tbody>
     </table>
   </body>
 </html>
